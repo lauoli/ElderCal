@@ -6,13 +6,14 @@ $(document).ready(function () {
 		var benefit = comm.find(':selected').val(),
 			default_rent = comm.find(":selected").data("rent");
 		console.log(benefit);
-		$(".money").text(benefit);
+		$(".money").val(benefit);
 		$("#rent").find("input").val(default_rent);
 
 	});
 
 	$(".expense input").on("keyup keydown keypress change", function (e) {
 		var new_budget = benefit;
+		console.log(new_budget);
 
 		$(".expense input").each(function () {
 			var value = ($(this).val());
