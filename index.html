@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Living Off Of Social Security Benefits In Gentrified Neigborhoods</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <h1>Living Off Of Social Security Benefits In Gentrified Neigborhoods</h1>
+
+      <p>Gentrification has exploded in the city, and in its wake, has left eldery residents who live off a fixed income, struggling to make ends meet.
+      </p>
+      <p>Neigborhoods such as Williamsburg and Central Harlem, which traditionally have been hotbeds for low-income residents, are seeing a surge of affluent newcomers.
+      </p>
+      <p>Supporters of gentrification argue that neighborhoods benefit from the influx of extra cash flowing into the area. Many aspects of everyday life are changed for the better; crime goes down, parks are renovated, vacant lots become urban gardens,
+        etc.
+      </p>
+      <p>Those against gentrification, remain skeptical of all these "benefits," since say the extra economic growth does little to serve the original residents of the neighborhood. They argue that residents are being priced out, forcing them to leave for
+        other parts of the city or seek out higher paying paying jobs.
+      </p>
+      <p>But what if you can't do either?
+      </p>
+      <p>How are the elderly, who depend on social security benefits, coping with the changing landscape?
+      </p>
+
+      <p>The data here is not 100% accurate. Kinks are still being worked out.
+      </p>
+
+      <form>
+        <h2>Pull Down</h2>
+        <p>
+          Below are the top 10 most gentrified neighborhoods in New York City....Select one to see what the average fixed income for a resident over 65 is.
+        </p>
+        <form>
+          <select id="form1">
+            <option value="Williamsburg/Greenpoint" data-price="1000" selected>Williamsburg/Greenpoint</option>
+            <option value="Central Harlem" data-price="2000">Central Harlem</option>
+            <option value="Lower East Side/Chinatown" data-price="3000">Lower East Side/Chinatown</option>
+            <option value="Bushwick" data-price="4000">Bushwick</option>
+            <option value="Morningside Heights/Hamilton Heights" data-price="4000">Morningside Heights/Hamilton Heights</option>
+            <option value="Bedford Stuyvesant" data-price="4000">Bedford Stuyvesant</option>
+            <option value="North Crown Heights/Prospect Heights" data-price="4000">North Crown Heights/Prospect Heights</option>
+            <option value="Washington Heights/Inwood" data-price="4000">Washington Heights/Inwood</option>
+            <option value="Mott Haven/Hunts Point" data-price="4000">Mott Haven/Hunts Point</option>
+            <option value="Astoria" data-price="4000">Astoria</option>
+        </select>
+        </form>
+
+        <!-- Note input type of **option** for pulldown -->
+        <!-- note the **selected** attribute which selects an option on load -->
+
+      </form>
+
+      <div class="content">
+        <div class="total_budget">$<span class="money"></span></div>
+
+        <div class="expense">
+          <span>Rent</span>
+          <input type="number" />
+        </div>
+
+        <div class="expense">
+          <span>Groceries</span>
+          <input type="number" />
+        </div>
+
+        <div class="expense">
+          <span>Transportation</span>
+          <input type="number" />
+        </div>
+
+        <div class="expense">
+          <span>Going Out</span>
+          <input type="number" />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>
