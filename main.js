@@ -3,9 +3,11 @@ $(document).ready(function () {
 	$("#form1").on("change", function () {
 		var comm = $(this);
 		// console.log(comm);
-		var benefit = comm.find(':selected').data("price");
+		var benefit = comm.find(':selected').val(),
+			default_rent = comm.find(":selected").data("rent");
 		console.log(benefit);
 		$(".money").text(benefit);
+		$("#rent").find("input").val(default_rent);
 
 	});
 
@@ -20,7 +22,7 @@ $(document).ready(function () {
 				value = 0;
 			}
 			new_budget -= value;
-		})
+		});
 		$(".total_budget").find("span").text(new_budget);
 
 		if (new_budget < 0) {
