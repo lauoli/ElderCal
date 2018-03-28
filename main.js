@@ -28,7 +28,14 @@ $(document).ready(function () {
 				value = 0;
 			}
 			new_budget -= value;
+			//if (value < "0") {
+			//$("").addClass("active");
+	 //$('#style-hed').prop('disabled', true);
+ });
+			}
 		});
+
+
 
 		$(".total_budget").find("span").text(new_budget);
 		$(".total_budget").find("span").prop('Counter', benefit).animate({
