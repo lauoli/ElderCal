@@ -7,59 +7,60 @@ Sometimes, when we stretch out to larger screens, we need to make minor tweaks f
 You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
 */
 
-
 /* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
-
 /* Start your base/mobile styles here */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
 }
 
 .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 1em;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-.department span {
-    font-weight: bold;
-    font-size: 1.3em;
-    display: block;
-    margin-bottom: 1em;
+.expense span {
+  font-weight: bold;
+  font-size: 1.3em;
+  display: block;
+  margin-bottom: 1em;
 }
 
-.department {
-    margin-bottom: 1em;
+.expense {
+  margin-bottom: 1em;
 }
 
 .total_budget {
-    position: sticky;
-    top: -1px;
-    font-size: 3em;
-    letter-spacing: 2px;
-    background-color: #FFF;
-    padding: .5em;
+  position: sticky;
+  top: -1px;
+  font-size: 3em;
+  letter-spacing: 2px;
+  background-color: #FFF;
+  padding: .5em;
 }
 
 input {
-    width: 100%;
-    display: block;
-    padding: .5em;
+  width: 100%;
+  display: block;
+  padding: .5em;
 }
 
+.changeHed {
+  color: red;
+}
 
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {}
 
 @media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
 }
