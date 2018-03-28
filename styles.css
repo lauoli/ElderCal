@@ -40,8 +40,8 @@ html, body {
 
 .total_budget {
   position: sticky;
-  top: -1px;
-  font-size: 3em;
+  bottom: -1px;
+  font-size: 2em;
   letter-spacing: 2px;
   background-color: #FFF;
   padding: .5em;
