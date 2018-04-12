@@ -35,6 +35,7 @@
       <p>Supporters of gentrification argue that neighborhoods benefit from the influx of extra cash flowing into the area. Many aspects of everyday life are changed for the better; crime goes down, parks are renovated, vacant lots become urban gardens,
         etc.
       </p>
+      <img src="img/map1.png" width="300px" height="300px"/>
       <p>Those against gentrification, remain skeptical of all these "benefits," since say the extra economic growth does little to serve the original residents of the neighborhood. They argue that residents are being priced out, forcing them to leave for
         other parts of the city or seek out higher paying paying jobs.
       </p>
@@ -47,24 +48,24 @@
       </p>
 
       <form>
-        <h2>Pull Down</h2>
-        <p>
-          Below are the top 10 most gentrified neighborhoods in New York City....Select one to see what the average fixed income for a resident over 65 is.
-        </p>
+        <h2>Top 5 Most Gentrified Neighborhoods in New York City </h2>
+
         <form>
+
           <select id="form1">
-            <option  value="3000" data-rent="1259" selected>Williamsburg/Greenpoint</option>
-            <option  value="2000" data-rent="200">Central Harlem</option>
-            <!-- <option value="Lower East Side/Chinatown" data-price="3000">Lower East Side/Chinatown</option>
-            <option value="Bushwick" data-price="4000">Bushwick</option>
-            <option value="Morningside Heights/Hamilton Heights" data-price="4000">Morningside Heights/Hamilton Heights</option>
-            <option value="Bedford Stuyvesant" data-price="4000">Bedford Stuyvesant</option>
-            <option value="North Crown Heights/Prospect Heights" data-price="4000">North Crown Heights/Prospect Heights</option>
-            <option value="Washington Heights/Inwood" data-price="4000">Washington Heights/Inwood</option>
-            <option value="Mott Haven/Hunts Point" data-price="4000">Mott Haven/Hunts Point</option>
-            <option value="Astoria" data-price="4000">Astoria</option> -->
+
+            <option  value="1646" data-rent="1259">Williamsburg/Greenpoint—Average Fixed Income $1646</option>
+            <option  value="1767" data-rent="950">Central Harlem—Average Fixed Income $1767</option>
+            <option value="1491" data-rent="1000">Lower East Side/Chinatown—Average Fixed Income $1491</option>
+            <option value="915" data-rent="540">Bushwick—Average Fixed Income $915</option>
+            <option value="1063" data-rent="800">Washington Heights/Inwood—Average Fixed Income $1063</option>
+
+
         </select>
+
+
         </form>
+
 
         <!-- Note input type of **option** for pulldown -->
         <!-- note the **selected** attribute which selects an option on load -->
@@ -72,11 +73,12 @@
       </form>
 
       <div class="content">
-        <div class="total_budget">$<span class="money"></span></div>
+<div class="total_budget">$<span class="money"></span></div>
+
 
         <div id="rent" class="expense">
           <span>Rent</span>
-          <input type="number" />
+          <input id="rentinput" type="number" />
         </div>
 
         <div class="expense">
