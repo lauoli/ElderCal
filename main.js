@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 	});
 
-	$(".expense input").on("keyup keydown keypress change", function (e) {
+	$(".expense input").on("oninput", function (e) {
 		var new_budget = benefit;
 		//console.log(new_budget);
 
@@ -28,21 +28,19 @@ $(document).ready(function () {
 			} else {
 				value = 0;
 			}
-			new_budget -= value;
+			new_budget = new_budget - value;
 			if (new_budget <= 0) {
-				console.log("red")
 				$(".total_budget").addClass("changeHed");
+			} else if (new_budget > 0) {
+				$(".total_budget").removeClass("changeHed");
 			}
-
 		});
-
-
 
 		$(".total_budget").find("span").text(new_budget);
 		$(".total_budget").find("span").prop('Counter', benefit).animate({
 			Counter: $(".total_budget").find("span").text()
 		}, {
-			duration: 1500,
+			duration: 100,
 			easing: 'swing',
 			step: function (now) {
 				$(".total_budget").find("span").text(Math.ceil(now));
