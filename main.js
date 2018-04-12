@@ -39,11 +39,11 @@ $(document).ready(function () {
 			if (new_budget <= 0) {
 				console.log("red")
 				$(".total_budget").addClass("changeHed");
-			} else if (new_budget >= 0){
+			}
+			else if (new_budget >= 0){
 				$(".total_budget").removeClass("changeHed");
 			}
-
-
+		
 
 		});
 

@@ -36,6 +36,16 @@ img{
   padding: 1em;
 }
 
+select, option {
+    width: 350px;
+}
+
+option {
+    overflow: hidden;
+    white-sapce: no-wrap;
+    text-overflow: ellipsis;
+}
+
 .expense span {
   font-weight: bold;
   font-size: 1.3em;
