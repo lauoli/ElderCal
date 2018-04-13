@@ -25,6 +25,7 @@ h2 {
   text-align: center;
   font-size: 34px;
   font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
 img {
@@ -83,9 +84,9 @@ input {
 }
 
 .calculator {
-  background-color: grey;
+  background-color: #0059b3;
   border: solid;
-  border-color: grey;
+  border-color: #0059b3;
 }
 
 .content {
@@ -94,7 +95,7 @@ input {
 }
 
 select, form1 {
-  background-color: lime;
+  background-color: white;
   font-size: 22px;
   height: 66px;
   width: 307px;
@@ -106,19 +107,22 @@ select, form1 {
   padding-left: 0px;
   text-align: left;
   font-family: 'Lato', sans-serif;
+  color: white;
 }
 
 .balance {
   padding-top: 5px;
   font-size: 22px;
-  background-color: grey;
+  background-color: #0059b3;
   font-family: 'Oswald', sans-serif;
   border-radius: 4px;
+  color: white;
 }
 
 .total_budget {
   font-size: 15px;
-  background-color: grey;
+  background-color: #0059b3;
+  color: white;
 }
 
 /* Tablet/Desktop overrides */
