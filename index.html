@@ -10,6 +10,8 @@
     <title>Living Off Of Social Security Benefits In Gentrified Neigborhoods</title>
 
     <!-- FONT AWESOME -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Your styles should be called here -->
@@ -36,23 +38,20 @@
         etc.
       </p>
       <img src="img/map1.png" />
+      <div> </div>
       <p>Those against gentrification, remain skeptical of all these "benefits," since say the extra economic growth does little to serve the original residents of the neighborhood. They argue that residents are being priced out, forcing them to leave for
         other parts of the city or seek out higher paying paying jobs.
       </p>
-      <p>But what if you can't do either?
-      </p>
-      <p>How are the elderly, who depend on social security benefits, coping with the changing landscape?
-      </p>
 
-      <p>The data here is not 100% accurate. Kinks are still being worked out.
-      </p>
-
-      <form>
-        <h2>Top 5 Most Gentrified Neighborhoods in New York City </h2>
-
+      <div class="calculator">
         <form>
+          <h2>Calculate Your Budget on a Fixed Income</h2>
 
-          <select id="form1">
+          <div class="total_budget">These are the top five Here are your instructions. Average fixed income: $<span class="money"></span></div>
+
+          <form>
+
+            <select id="form1">
 
             <option  value="1646" data-rent="1259">Williamsburg/Greenpoint</option>
             <option  value="1767" data-rent="950">Central Harlem</option>
@@ -64,40 +63,51 @@
         </select>
 
 
+          </form>
+
+
+          <!-- Note input type of **option** for pulldown -->
+          <!-- note the **selected** attribute which selects an option on load -->
+
         </form>
 
+        <div class="content">
+          <div> </div>
+          <div class="balance">BALANCE REMAINING: $<span class="money"></span></div>
 
-        <!-- Note input type of **option** for pulldown -->
-        <!-- note the **selected** attribute which selects an option on load -->
 
-      </form>
+          <div id="rent" class="expense">
+            <span>Rent</span>
+            <input id="rentinput" type="number" />
+          </div>
 
-      <div class="content">
-        <div class="total_budget">Average fixed income: $<span class="money"></span></div>
-        <div class="balance">Balance remaining: $<span class="money"></span></div>
+          <div class="expense">
+            <span>Groceries</span>
+            <input type="number" />
+          </div>
 
-        <div id="rent" class="expense">
-          <span>Rent</span>
-          <input id="rentinput" type="number" />
+          <div class="expense">
+            <span>Transportation</span>
+            <input type="number" />
+          </div>
+
+          <div class="expense">
+            <span>Going Out</span>
+            <input type="number" />
+          </div>
         </div>
-
-        <div class="expense">
-          <span>Groceries</span>
-          <input type="number" />
-        </div>
-
-        <div class="expense">
-          <span>Transportation</span>
-          <input type="number" />
-        </div>
-
-        <div class="expense">
-          <span>Going Out</span>
-          <input type="number" />
-        </div>
-
       </div>
+
+      <p>But what if you can't do either?
+      </p>
+      <p>How are the elderly, who depend on social security benefits, coping with the changing landscape?
+      </p>
+
+      <p>The data here is not 100% accurate. Kinks are still being worked out.
+      </p>
     </div>
+    <!--container-->
+
 
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
