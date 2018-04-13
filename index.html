@@ -46,58 +46,60 @@
 
       <p>The data here is not 100% accurate. Kinks are still being worked out.
       </p>
-
-      <form>
-        <h2>Top 5 Most Gentrified Neighborhoods in New York City </h2>
-
+      <div class="calculator">
         <form>
+          <h2>Calculate Your Budget on a Fixed Income</h2>
 
-          <select id="form1">
+          <form>
 
-            <option  value="1646" data-rent="1259">Williamsburg/Greenpoint — Average Fixed Income $1646</option>
-            <option  value="1767" data-rent="950">Central Harlem — Average Fixed Income $1767</option>
-            <option value="1491" data-rent="1000">Lower East Side/Chinatown — Average Fixed Income $1491</option>
-            <option value="915" data-rent="540">Bushwick—Average Fixed Income $915</option>
-            <option value="1063" data-rent="800">Washington Heights/Inwood — Average Fixed Income $1063</option>
+            <select id="form1">
+
+            <option  value="1646" data-rent="1259">Williamsburg/Greenpoint </option>
+            <option  value="1767" data-rent="950">Central Harlem </option>
+            <option value="1491" data-rent="1000">Lower East Side/Chinatown </option>
+            <option value="915" data-rent="540">Bushwick</option>
+            <option value="1063" data-rent="800">Washington Heights/Inwood</option>
 
 
         </select>
 
 
+          </form>
+
+
+          <!-- Note input type of **option** for pulldown -->
+          <!-- note the **selected** attribute which selects an option on load -->
+
         </form>
 
+        <div class="content">
+          <div class="total_budget">Average fixed income: $<span class="money"></span></div>
+          <div class="balance">Balance remaining: $<span class="money"></span></div>
 
-        <!-- Note input type of **option** for pulldown -->
-        <!-- note the **selected** attribute which selects an option on load -->
+          <div id="rent" class="expense">
+            <span>Rent</span>
+            <input id="rentinput" type="number" />
+          </div>
 
-      </form>
+          <div class="expense">
+            <span>Groceries</span>
+            <input type="number" />
+          </div>
 
-      <div class="content">
-        <div class="total_budget">Average fixed income: $<span class="money"></span></div>
-        <div class="balance">Balance remaining: $<span class="money"></span></div>
+          <div class="expense">
+            <span>Transportation</span>
+            <input type="number" />
+          </div>
 
-        <div id="rent" class="expense">
-          <span>Rent</span>
-          <input id="rentinput" type="number" />
+          <div class="expense">
+            <span>Going Out</span>
+            <input type="number" />
+          </div>
         </div>
-
-        <div class="expense">
-          <span>Groceries</span>
-          <input type="number" />
-        </div>
-
-        <div class="expense">
-          <span>Transportation</span>
-          <input type="number" />
-        </div>
-
-        <div class="expense">
-          <span>Going Out</span>
-          <input type="number" />
-        </div>
-
       </div>
     </div>
+    <!--container-->
+
 
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
