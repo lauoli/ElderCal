@@ -23,6 +23,8 @@ html, body {
 
 h2 {
   text-align: center;
+  font-size: 34px;
+  font-family: 'Oswald', sans-serif;
 }
 
 img {
@@ -41,7 +43,7 @@ img {
 }
 
 select, option {
-  width: 350px;
+  width: 318px;
 }
 
 option {
@@ -81,6 +83,41 @@ input {
 }
 
 .calculator {
+  background-color: grey;
+  border: solid;
+  border-color: grey;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+select, form1 {
+  background-color: lime;
+  font-size: 22px;
+  height: 66px;
+  width: 307px;
+}
+
+.expense {
+  padding: 5px;
+  max-width: 200px;
+  padding-left: 0px;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+
+.balance {
+  padding-top: 5px;
+  font-size: 22px;
+  background-color: grey;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 4px;
+}
+
+.total_budget {
+  font-size: 15px;
   background-color: grey;
 }
 
